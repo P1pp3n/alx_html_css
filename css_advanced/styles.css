@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.header {
+    background: url('Pictures/Object.png') no-repeat center center/cover;
+    height: 100vh; /* Keeps the header full screen */
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header .content {
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    background: inherit; /* This will allow the background to extend visually */
+}
+
+/* Add styles for the other sections and footer as needed */
+
+
+.header img {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.header .title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.header .subtitle {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.header .btn {
+    background: #ff00ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section .profiles {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section .profile {
+    text-align: center;
+}
+
+.section .profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial {
+    background: #d1a1ff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tutorials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tutorials .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tutorials .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 20px;
+    text-align: left;
+}
+
+.membership {
+    background: #1a1a2e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.membership h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.membership > .feature{
+    display: flex;
+    text-justify: distribute;
+}
+
+.faq {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer {
+    background: #1a1a2e;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and social icons */
+    align-items: center; /* Center vertically */
+}
+
+.footer .footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer .footer-logo img {
+    max-height: 50px;
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.footer .socials {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .socials a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer p {
+    text-align: center; /* Center copyright */
+    flex-grow: 1; /* Allow copyright to take available space */
+    margin: 0; /* Remove margin for better alignment */
+}
