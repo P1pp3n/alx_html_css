@@ -1,0 +1,56 @@
+#contact-us {
+    padding: 20px;
+    background-color: white; /* Match the overall theme */
+    color: rgb(25, 25, 28);
+    text-align: center;
+}
+
+#contact-us h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements */
+}
+
+form div {
+    margin-bottom: 15px; /* Space between form fields */
+    display: flex;
+    justify-content: space-between; /* Space out label and input */
+    width: 80%; /* Match form width */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+    flex-basis: 30%; /* Set width for labels */
+    text-align: left; /* Align text to the left */
+}
+
+input, textarea {
+    flex-basis: 65%; /* Set width for inputs */
+    padding: 10px;
+    border: none; 
+    border-bottom: 2px solid grey; /* Only bottom border */
+    background-color: transparent; /* Transparent background */
+    color: #f9f9f9; /* Text color */
+    outline: none; /* Remove outline on focus */
+}
+
+input:focus, textarea:focus {
+    border-bottom-color: var(--button-color); /* Change bottom border color on focus */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken(var(--button-color), 10%); /* Change on hover */
+}

@@ -1,0 +1,42 @@
+#footer {
+    background-color: rgb(2, 2, 49); /* Same as our results section */
+    color: #f9f9f9;
+    padding: 20px;
+    text-align: center; /* Center bottom text */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Align items on left and right */
+    align-items: center; /* Center vertically */
+}
+
+.footer-logo img {
+    height: 30px; /* Adjust as needed */
+    max-width: 150px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center; /* Center icons vertically */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between icons */
+    font-size: 24px; /* Adjust icon size */
+}
+
+.footer-bottom {
+    margin-top: 10px; /* Space above copyright text */
+}
+
+.holberton_school-icon-ic_facebook::before{
+    content:"";
+}
+.holberton_school-icon-ic_twitter::before{
+    content:"";
+}
+.holberton_school-icon-ic_instagram::before{
+    content:"";
+}

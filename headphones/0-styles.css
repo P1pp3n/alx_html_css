@@ -1,0 +1,121 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* CSS Layout */
+.container {
+    
+    max-width: 1000px;             /* Set max width */
+    margin-right: auto;  
+    margin-left: auto;              /* Center the container */
+    width: 100%;                   /* Ensure it uses full width */
+    position: relative;
+    float:right;    
+    
+}
+
+#logo {
+    max-width: 150px;
+    margin-top: 0;
+}
+
+nav {
+    margin-left: auto; 
+    float:right            /* This ensures nav stays to the right */
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 405px;
+    margin-right: 2px;
+}
+
+nav li {
+    margin-left: 10px;
+}
+
+.Header {
+    display: flex;
+    align-items: flex-start;       /* Align items to the top */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 20px;
+    height: 100vh;
+    background: url(images/headphones_hero_1.jpg) no-repeat center center / cover;
+    color: white;
+}
+
+.welcome-text {
+    position: absolute;            /* Center the welcome text */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center;           /* Center text inside */
+    margin: 0;                    /* Reset margin */
+    height: 5%;
+    width:700px
+
+}
+.welcome-text p button{
+    padding-bottom: 50px; 
+}
+
+/* CSS Presentation */
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6565;
+}
+
+a:active {
+    color: #FF6565;
+}
+
+button {
+    background-color: #FF6565;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+:root {
+    --main-color: white;
+    --secondary-color: rgb(2, 2, 49);
+    --button-color: #FF6565;
+}
+
+/* Media Query */
+@media (max-width: 480px) {
+    .Header {
+        background: url(images/headphones_hero_1_mobile.jpg) no-repeat center center / cover; /* Optional mobile background */
+        height: auto; /* Adjust height */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .Header nav ul {
+        display: flex;
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    .Header p {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}

@@ -1,0 +1,46 @@
+#our-results {
+    padding: 20px;
+    background-color: var(--secondary-color); /* Dark background color */
+    text-align: center;
+    color: #f9f9f9;
+}
+
+:root {
+    --main-color: white;
+    --secondary-color: rgb(2, 2, 49);
+    --button-color: #FF6565;
+}
+
+.results-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Adjust for smaller screens */
+    margin-top: 20px;
+}
+
+.result-item {
+    flex: 1 1 20%; 
+    margin: 10px;
+    height: 94px; 
+    width: 100px;
+    background-image: url('images/pentagone.png'); 
+    background-size: contain; /* Ensure the image fits */
+    background-position: center; 
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    align-items: center; 
+    justify-content: center; 
+    color: #fff; 
+    font-size: 7px; 
+}
+
+.result-item p {
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center text */
+}
+
+.result-item .percentage {
+    font-size: 1.5em; /* Larger font size for percentage */
+    font-weight: bold; /* Make percentage bold */
+}

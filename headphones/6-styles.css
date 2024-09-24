@@ -1,0 +1,43 @@
+#our-results {
+    padding: 20px;
+    background-color: var(--secondary-color); /* Light background color */
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.results-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Adjust for smaller screens */
+    margin-top: 20px;
+}
+:root {
+    --main-color: white;
+    --secondary-color: rgb(2, 2, 49);
+    --button-color: #FF6565;
+}
+
+.result-item {
+    position: relative;
+    width: 100px; 
+    height: 94px; 
+    background-color: transparent; /* No solid color, just a shape */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); /* Pentagon shape */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background with transparency */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    color: #fff; 
+    font-size: 1.2em; 
+}
+
+.percentage {
+    font-size: 2em; /* Larger text for percentage */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.result-text {
+    margin-top: 5px; /* Space between percentage and text */
+    font-size: 0.8em; /* Smaller text for description */
+}

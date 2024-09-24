@@ -1,0 +1,150 @@
+/* Animation for "What We Do" section */
+.what-we-do {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.what-we-do:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+    opacity: 0.95; /* Slight fade */
+}
+
+/* Animation for "icons" */
+.icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Scale on hover */
+    opacity: 0.8; /* Slight fade */
+}
+
+/* Animation for "Our Results" section items */
+.results-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.result-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.result-item:hover {
+    transform: scale(1.1) rotate(2deg); /* Scale and slight rotation */
+    opacity: 0.9; /* Slight fade effect */
+}
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Header {
+    background-color: rgb(2, 2, 49);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#welcome-text {
+    padding: 20px;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section Styles */
+.what-we-do, #our-results, #contact-us {
+    padding: 20px;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    flex: 1 1 20%; /* Flex item sizing */
+    padding: 10px;
+}
+
+/* Footer Styles */
+#footer {
+    background-color: rgb(2, 2, 49);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .icon {
+        flex: 1 1 45%; /* Increase size on smaller screens */
+    }
+
+    .results-images {
+        flex-direction: column; /* Stack results items */
+    }
+
+    .result-item {
+        margin: 10px 0; /* Add margin between items */
+    }
+
+    #welcome-text {
+        font-size: 0.9em; /* Slightly reduce text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .Header {
+        padding: 15px 0;
+    }
+
+    .what-we-do h2, #our-results h2, #contact-us h2 {
+        font-size: 1.5em; /* Reduce heading size */
+    }
+
+    .icon {
+        flex: 1 1 100%; /* Full width on mobile */
+    }
+
+    input, textarea {
+        width: 90%; /* Increase input width on mobile */
+    }
+
+    button {
+        width: 90%; /* Increase button width on mobile */
+    }
+}
